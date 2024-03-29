@@ -5,7 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "300"
   creationTimestamp: null
-  name: default
+  name: env01
   namespace: openshift-gitops
 spec:
   clusterResourceWhitelist:
