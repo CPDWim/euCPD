@@ -1,5 +1,5 @@
 ---
-repoURL: https://github.com/wtichelen/cld-multi
+repoURL: https://github.com/CPDWim/euCPD
 targetRevision: main
 metadata:
   argocd_namespace: openshift-gitops
