@@ -15,7 +15,7 @@ storageclass:
   rwx: ocs-storagecluster-cephfs
 targetRevision: main
 
-iam_integration: "set in presync-hook of parent app"
-image_arch: "set in parent app"
+iam_integration: ""
+image_arch: ""
 
 version: "4.8.2"
