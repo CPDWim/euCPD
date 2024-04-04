@@ -1,0 +1,14 @@
+apiVersion: cpd.ibm.com/v1
+kind: Ibmcpd
+metadata:
+
+  name: ibmcpd-cr
+  namespace: cp4denv02-inst
+spec:
+  blockStorageClass: ocs-storagecluster-ceph-rbd
+  fileStorageClass: ocs-storagecluster-cephfs
+  license:
+    accept: true
+    license: Enterprise
+  version: 4.8.2
+  zenDefaultIngressReencrypt: false
