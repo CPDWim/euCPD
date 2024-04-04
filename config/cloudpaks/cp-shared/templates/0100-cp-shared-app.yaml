@@ -59,7 +59,7 @@ spec:
           value: "{{.Values.storageclass.rwx.override}}"
         - name: targetRevision
           value: ${ARGOCD_APP_SOURCE_TARGET_REVISION}
-    path: config/argocd-cloudpaks/cp-shared
+    path: config/cloudpaks/cp-shared
     repoURL: {{.Values.repoURL}}
     targetRevision: {{.Values.targetRevision}}
   syncPolicy:
