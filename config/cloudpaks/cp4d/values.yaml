@@ -8,14 +8,14 @@ metadata:
   operators_namespace: cp4denv01-oper
   operands_namespace: cp4denv01-inst
 
-components: "set in parent app"
+components: ibm-cert-manager,ibm-licensing,cpfs,cpd_platform
 
 storageclass:
-  rwo: "set in presync-hook of parent app"
-  rwx: "set in presync-hook of parent app"
+  rwo: ocs-storagecluster-ceph-rbd
+  rwx: ocs-storagecluster-cephfs
 targetRevision: main
 
 iam_integration: "set in presync-hook of parent app"
 image_arch: "set in parent app"
 
-version: "set in parent app"
+version: "4.8.2"
