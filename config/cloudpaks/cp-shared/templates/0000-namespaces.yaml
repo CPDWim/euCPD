@@ -13,3 +13,20 @@ metadata:
   name: ibm-common-services
 spec: {}
 status: {}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: cp4denv01-oper
+spec: {}
+status: {}
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: cp4denv01-inst
+spec: {}
+status: {}
+
