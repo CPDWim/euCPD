@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "90"
     argocd.argoproj.io/sync-options: Delete=false
-name: "{{.Values.metadata.argocd_app_name}}-pre-sync-cluster-setup"
+name: "{{.Values.metadata.cp4d_app_name}}-pre-sync-cluster-setup"
   namespace: {{.Values.metadata.argocd_namespace}}
 spec:
   template:
