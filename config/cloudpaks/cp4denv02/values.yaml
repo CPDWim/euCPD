@@ -1,16 +1,16 @@
 ---
-repoURL: https://github.com/CPDWim/euCPD
+repoURL: https://github.com/CPDWim/euCPD/
 targetRevision: main
 serviceaccount:
   argocd_application_controller: openshift-gitops-argocd-application-controller
 metadata:
-  argocd_app_namespace: cp4den02
+  argocd_app_namespace: cp4d
   argocd_namespace: openshift-gitops
-  operators_namespace: cp4denv02-oper
-  operands_namespace: cp4denv02-isnt
+  operators_namespace: cp4denv01-oper
+  operands_namespace: cp4denv01-isnt
 
 # https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=information-determining-which-components-install
-components: ibm-cert-manager,ibm-licensing,cpfs,cpd_platform
+components: cpd_platform,wkc
 
 storageclass:
   rwo: ocs-storagecluster-ceph-rbd
@@ -23,4 +23,4 @@ image_arch: ""
 # image_arch: .s390x
 # image_arch: .ppc64le
 
-version: 4.8.4
+version: 4.8.2
