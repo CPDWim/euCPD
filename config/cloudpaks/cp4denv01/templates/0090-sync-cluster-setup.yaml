@@ -6,7 +6,6 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "90"
-    argocd.argoproj.io/sync-options: Delete=false
   name: pre-sync-cp4d-cluster-setup
   namespace: {{.Values.metadata.argocd_namespace}}
 spec:
