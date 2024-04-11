@@ -1,0 +1,17 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "12"
+  creationTimestamp: null
+  name: argocd-cluster-binding
+  namespace: "{{.Values.metadata.argocd_namespace}}"
+roleRef:
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+subjects:
+  - kind: ServiceAccount
+    name: "{{.Values.serviceaccount.argocd_application_controller}}"
+    namespace: "{{.Values.metadata.argocd_namespace}}"
