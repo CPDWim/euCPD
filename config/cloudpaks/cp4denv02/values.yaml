@@ -4,6 +4,7 @@ targetRevision: main
 serviceaccount:
   argocd_application_controller: openshift-gitops-argocd-application-controller
 metadata:
+  cp4d_app_name: cp4denv02
   argocd_app_namespace: cp4d-02
   argocd_namespace: openshift-gitops
   operators_namespace: cp4denv02-oper

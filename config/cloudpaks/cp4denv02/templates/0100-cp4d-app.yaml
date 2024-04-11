@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cp4denv02
+  name: {{.Values.metadata.cp4d_app_name}}
   namespace: cp4d-02
 spec:
   destination:

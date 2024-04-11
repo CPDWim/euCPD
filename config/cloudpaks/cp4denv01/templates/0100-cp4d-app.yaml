@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: cp4denv01
-  namespace: openshift-gitops
+  namespace: {{.Values.metadata.argocd_namespace}}
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
