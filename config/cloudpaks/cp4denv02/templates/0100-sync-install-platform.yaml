@@ -7,7 +7,7 @@ metadata:
     argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
     argocd.argoproj.io/sync-wave: "101"
-  name: {{.Values.metadata.cp4d_app_name}}-sync-install-components
+  name: cp4denv02-sync-install-components
   namespace: {{.Values.metadata.argocd_namespace}}
 spec:
   template:
