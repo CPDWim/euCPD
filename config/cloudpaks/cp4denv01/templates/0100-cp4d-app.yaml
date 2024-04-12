@@ -52,6 +52,6 @@ spec:
   syncPolicy:
       prune: true
       selfHeal: true
-      syncOptions:
-      - ServerSideApply=true
-      - Validate=false
+ #     syncOptions:
+ #     - ServerSideApply=true
+ #     - Validate=false
