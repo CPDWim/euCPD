@@ -18,6 +18,14 @@ dedicated_cs:
   namespace_mapping:
     cp4i: cp4i
     cp4s: cp4s
+contentsource:
+    cpicriocp: 'artifactory-artifactory.apps.ocp-cluster.cloudpak.local:443/cp'
+    cpicriocpcpd: 'cp.icr.io/cp/cpd'
+    icriocpopen: 'icr.io/cpopen'
+    icriocdb2u: 'icr.io/db2u'
+    icriocpopencpfs: 'icr.io/cpopen/cpfs'
+    quayioopencloudio: 'quay.io/opencloudio'
+    dockerioibmcom: 'docker.io/ibmcom'
 online_catalog_source_priority: -1
 red_hat_cert_manager: false
 storageclass:

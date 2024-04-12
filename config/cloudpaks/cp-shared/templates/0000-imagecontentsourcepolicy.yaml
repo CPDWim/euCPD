@@ -1,0 +1,29 @@
+apiVersion: operator.openshift.io/v1alpha1
+kind: ImageContentSourcePolicy
+metadata:
+  annotations:
+  name: cloud-pak-mirror
+spec:
+  repositoryDigestMirrors:
+    - mirrors:
+        - "{{.Values.contentsource.cpicriocp}}"
+      source: cp.icr.io/cp
+    - mirrors:
+        - "{{.Values.contentsource.cpicriocpcpd}}"
+      source: cp.icr.io/cp/cpd
+    - mirrors:
+        - "{{.Values.contentsource.icriocpopen}}"
+      source: icr.io/cpopen
+    - mirrors:
+        - "{{.Values.contentsource.icriodb2u}}"
+      source: icr.io/db2u
+    - mirrors:
+        - "{{.Values.contentsource.icriocpopencpfs}}"
+      source: icr.io/cpopen/cpfs
+    - mirrors:
+        - "{{.Values.contentsource.quayioopencloudio}}"
+      source: quay.io/opencloudio
+    - mirrors:
+        - "{{.Values.contentsource.dockerioibmcom}}"
+      source: docker.io/ibmcom
+ 
