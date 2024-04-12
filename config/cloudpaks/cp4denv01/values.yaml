@@ -7,7 +7,7 @@ metadata:
   argocd_app_namespace: cp4d
   argocd_namespace: openshift-gitops
   operators_namespace: cp4denv01-oper
-  operands_namespace: cp4denv01-isnt
+  operands_namespace: cp4denv01-inst
 
 # https://www.ibm.com/docs/en/cloud-paks/cp-data/4.8.x?topic=information-determining-which-components-install
 components: cpd_platform
