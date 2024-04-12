@@ -50,6 +50,8 @@ spec:
     repoURL: {{.Values.repoURL}}
     targetRevision: {{.Values.targetRevision}}
   syncPolicy:
-    automated:
+      syncOptions:
+      - ServerSideApply=true
+      - Validate=false
       prune: true
       selfHeal: true
