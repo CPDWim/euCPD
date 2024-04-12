@@ -19,10 +19,10 @@ dedicated_cs:
     cp4i: cp4i
     cp4s: cp4s
 contentsource:
-    cpicriocp: 'artifactory-artifactory.apps.ocp-cluster.cloudpak.local:443/cp'
+    cpicriocp: 'cp.icr.io/cp'
     cpicriocpcpd: 'cp.icr.io/cp/cpd'
     icriocpopen: 'icr.io/cpopen'
-    icriocdb2u: 'icr.io/db2u'
+    icriodb2u: 'icr.io/db2u'
     icriocpopencpfs: 'icr.io/cpopen/cpfs'
     quayioopencloudio: 'quay.io/opencloudio'
     dockerioibmcom: 'docker.io/ibmcom'
